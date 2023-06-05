@@ -110,7 +110,7 @@ DEBUG = True
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
-print(os.environ.get('DATABASE_URL'))
+# print(os.environ.get('DATABASE_URL'))
 
 # AWS credentials
 AWS_ACCESS_KEY_ID = os.getenv("AWS_ACCESS_KEY_ID")
