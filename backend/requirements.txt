@@ -8,6 +8,7 @@ coreapi==2.3.3
 coreschema==0.0.4
 cryptography==39.0.2
 defusedxml==0.7.1
+dj-database-url==2.0.0
 Django==4.1.7
 django-cors-headers==3.14.0
 django-storages==1.13.2
@@ -15,6 +16,7 @@ django-templated-mail==1.1.1
 djangorestframework==3.14.0
 djangorestframework-simplejwt==5.2.2
 djoser==2.1.0
+gunicorn==20.1.0
 idna==3.4
 itypes==1.2.0
 Jinja2==3.1.2
@@ -36,6 +38,7 @@ six==1.16.0
 social-auth-app-django==4.0.0
 social-auth-core==4.4.0
 sqlparse==0.4.3
+typing_extensions==4.6.3
 tzdata==2022.7
 uritemplate==4.1.1
 urllib3==1.26.15
