@@ -236,3 +236,5 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     # ... other allowed domains ...
 ]
+
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '13.214.171.27']
