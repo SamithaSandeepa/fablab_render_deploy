@@ -1,0 +1,12 @@
+version: "2.18.1"
+
+services:
+  django:
+    image: django-docker:0.0.1
+    build: .
+    # environment:
+    #   - DJANGO_DATABASE_URL=postgres://fablab_ppr1_user:wLpxQJ5IK3cMu12eAr8h7rSDoiM1N3Pl@dpg-chuuto7dvk4oliu3iud0-a.singapore-postgres.render.com/fablab_ppr1
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"

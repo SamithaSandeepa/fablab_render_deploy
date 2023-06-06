@@ -106,10 +106,31 @@ DEBUG = True
 #         'PORT': os.getenv('DB_PORT'),
 #     }
 # }
+# DATABASES = {
+#     'default': dj_database_url.parse(os.environ.get('DJANGO_DATABASE_URL'))
+# }
+
 
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    'default': dj_database_url.parse(os.getenv('DJANGO_DATABASE_URL'))
 }
+
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'fablab_ppr1',
+#         'USER': 'fablab_ppr1_user',
+#         'PASSWORD': 'wLpxQJ5IK3cMu12eAr8h7rSDoiM1N3Pl',
+#         'HOST': 'dpg-chuuto7dvk4oliu3iud0-a.singapore-postgres.render.com',
+#         'PORT': '5432',
+#     }
+# }
+
+# # Override the 'default' database configuration with the value from DATABASE_URL environment variable
+# db_from_env = dj_database_url.config()
+# DATABASES['default'].update(db_from_env)
+
 # print(os.environ.get('DATABASE_URL'))
 
 # AWS credentials
