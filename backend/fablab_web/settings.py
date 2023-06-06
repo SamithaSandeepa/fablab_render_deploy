@@ -106,14 +106,14 @@ DEBUG = True
 #         'PORT': os.getenv('DB_PORT'),
 #     }
 # }
-# DATABASES = {
-#     'default': dj_database_url.parse(os.environ.get('DJANGO_DATABASE_URL'))
-# }
-
-
 DATABASES = {
-    'default': dj_database_url.parse(os.getenv('DJANGO_DATABASE_URL'))
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
+
+
+# DATABASES = {
+#     'default': dj_database_url.parse(os.getenv('DJANGO_DATABASE_URL'))
+# }
 
 
 # DATABASES = {
