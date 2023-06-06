@@ -258,4 +258,4 @@ CORS_ALLOWED_ORIGINS = [
     # ... other allowed domains ...
 ]
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '13.214.171.27']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '13.214.171.27', 'testapp-5pib.onrender.com']
